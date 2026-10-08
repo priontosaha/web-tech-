@@ -15,7 +15,7 @@ form {
 
 /* Top text outside the form */
 body > label:first-child {
-    color: red; /* Laal ronger disclaimer[cite: 7] */
+    color: red; 
     font-size: 12px;
     display: block;
     width: 750px;
@@ -29,7 +29,7 @@ body > r {
    font-size: 14px;
 }
 
-/* Red Section Headings[cite: 7] */
+
 h2 {
     color: red;
     font-size: 18px;
@@ -39,7 +39,7 @@ h2 {
 
 
 
-/* Default style for labels (Left Column) */
+
 label {
     display: inline-block;
     width: 250px;
@@ -51,7 +51,7 @@ label {
     margin-top: 5px;
 }
  
-/* Reset label styles for Radio and Checkbox options jate segulo pasapasi bose */
+
 input[type="radio"] + label, 
 input[type="checkbox"] + label {
     width: auto;
@@ -61,7 +61,7 @@ input[type="checkbox"] + label {
     display: inline;
 }
 
-/* Targeting specific instructional labels to be full width (Niche dewa boro text gulo) */
+
 form > label:nth-of-type(31), 
 form > label:nth-of-type(42), 
 form > label:nth-of-type(46),
@@ -76,7 +76,7 @@ form > label:nth-of-type(47) {
     color: #333;
 }
 
-/* Style for Input fields (Right Column) */
+
 input[type="text"], input[type="email"], input[type="tel"], 
 input[type="fax"], input[type="otheramount"], select, textarea {
     width: 280px;
@@ -96,9 +96,6 @@ textarea {
     height: 28px;
 }
 
-/* Specific checkboxes indentation (Eguloke dan pashe soriye dewa hoyeche) */
-
-/* Submit and Reset Buttons */
 input[type="reset"], input[type="submit"] {
     padding: 4px 15px;
     border-radius: 12px;
@@ -118,7 +115,6 @@ input[type="reset"], input[type="submit"] {
             font-weight: bold;    
    margin-left:0px;
  }
-/* Reset button k majhkhaner kachakachi anar jonno */
 input[type="reset"] {
     margin-left: 255px; 
     margin-right: 5px;
