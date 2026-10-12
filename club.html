@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The University Coding Club </title>
+    <link rel="icon" type="image/png" href="codeclub.png">
+
+    <link rel="stylesheet" href="UCC style.css">
+</head>
+
+<body>
+    
+<!-- nevigation bar  -->
+<header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#register">Register</a>
+        </nav>
+
+        <h1>University Coding Club</h1>
+        <p>Welcome to the ultimate hub for student developers and tech enthusiasts!</p>
+<head>
+</header> 
+ 
+<section id="about">
+        <h2>About Our Club</h2>
+        <img src="cclublogo.jpeg" alt="Coding Club Logo" class="logo-img">
+        <p>The University Coding Club is dedicated to fostering a collaborative learning environment where students of all skill levels can enhance their programming abilities, work on innovative team projects, and prepare for careers in technology through workshops, hackathons, and guest tech talks.</p>
+    </section>
+
+    <!-- weekly schedule  -->
+<section id="schedule">
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>4:00 PM - 6:00 PM</td>
+                    <td>Intro to Web Development</td>
+                    <td rowspan="3">Lab 302</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>4:00 PM - 6:00 PM</td>
+                    <td>Data Structures & Algorithms Practice</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>3:00 PM - 6:00 PM</td>
+                    <td colspan="1">Open Hackathon & Project Collaboration (Auditorium)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+        <h2>Join the Club</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Student Membership Form</legend>
+
+                <label for="fullname">Full Name<span class="required-star">*</span>:</label>
+                <input type="text" id="fullname" name="fullname" required><br>
+
+                <label for="email">Email Address<span class="required-star">*</span>:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" ><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="Other">Other</option>
+               </select><br>
+
+                 <input type="reset" value="Reset" ;>
+                 <input type="submit" value="Submit" ;>
+            </fieldset>
+        </form>
+    </section>
+
+
+     <footer>
+        <p>&copy; 2026 University Coding Club.Visit the official
+         <a href="https://www.aiub.edu" target="_blank" class="footer-link">University Website</a>.</p>
+    </footer>
+</body>
+</html>
+
