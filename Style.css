@@ -1,0 +1,238 @@
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --text-light: #64748b;
+    --border-color: #cbd5e1;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-top: 60px; /* Offset for fixed navigation bar */
+    padding-bottom: 2rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-bg);
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays in front of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    display: inline-block; /* Makes navigation links appear side by side */
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, var(--dark-bg), #1e293b);
+    color: #ffffff;
+    padding: 4rem 1rem 2rem 1rem; /* Extra top padding to account for fixed nav */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+    color: var(--dark-bg);
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 0.5rem;
+}
+
+#about {
+    width: 85%;
+    max-width: 800px;
+    padding: 2.5rem;
+    border: 2px solid var(--border-color);
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 150px; /* Set a max-width on the image */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+label {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+.required-star {
+    color: #dc2626;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+input[type="reset"] {
+    background-color: #64748b;
+}
+
+input[type="reset"]:hover {
+    background-color: #475569;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+}
